@@ -4,7 +4,7 @@ import * as ReactDOM from "react-dom";
 
 import Menu from "../Menu";
 
-import "./style.scss";
+import "./main.scss";
 
 export default class App extends React.Component<any, any> {
     public render() {

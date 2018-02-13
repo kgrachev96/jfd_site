@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Image, MenuItem, Nav, Navbar, NavDropdown, NavItem } from "react-bootstrap";
 import * as ReactDOM from "react-dom";
-import * as logo from "../../images/logo.svg";
+import * as logo from "../../images/logo_desk.svg";
 
 import "./style.scss";
 
@@ -12,7 +12,7 @@ export default class Menu extends React.Component<any, any> {
                 <Navbar inverse collapseOnSelect>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <Image src={logo} responsive />
+                            <Image href="/" src={logo} responsive />
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>

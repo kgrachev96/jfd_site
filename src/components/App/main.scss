@@ -1,21 +1,44 @@
-$font-path: '../../fonts/ProximaNova-Light';
-$font-name: 'ProximaNova-Light';
+@import "./reset.scss";
 
-$fallback-src: url("#{$font-path}/#{$font-name}.eot");
-$src:
-  url("#{$font-path}/#{$font-name}.eot?#iefix") format('embedded-opentype'),
-  url("#{$font-path}/#{$font-name}.woff") format('woff'),
-  url("#{$font-path}/#{$font-name}.ttf") format('truetype'),
-  url("#{$font-path}/#{$font-name}.svg?##{$font-name}") format('svg')
-;
+@function urls($url, $multiple) {
 
+  $result: ();
+  $fontsBaseURL: '../../fonts/';
 
-@font-face {
-  font-family: $font-name;
-  src:  $fallback-src;
-  src:  $src;
+  @if $multiple == true {
+      @each $item in ('.ttf', '.eot', '.woff', '.svg') {
+          $result: append($result, url('#{$fontsBaseURL}#{$url}#{$item}'), 'comma');
+      }
+
+      @return $result;
+
+  } @else {
+      @return url('#{$fontsBaseURL}#{$url}.ttf');
+  }
+}
+
+@mixin Font($family, $src-name, $multiple) {
+  $url: urls($src-name, $multiple);
+  font-family: $family;   
+  src: $url;
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  @include Font("ProximaNova-Light", "ProximaNova-Light", true);
+}
+
+@font-face {
+  @include Font("ProximaNova-Medium", "ProximaNova-Medium", true);
+}
+
+@font-face {
+  @include Font("ProximaNova-Regular", "ProximaNova-Regular", true);
+}
+
+@font-face {
+  @include Font("SnellRoundhand", "SnellRoundhand", false);
 }
 
 html,
@@ -46,6 +69,54 @@ body {
 body input,
 body button {
   outline: none;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "ProximaNova-Medium", sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 413px) {
+  h1 {
+    font-size: 1em;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-family: "ProximaNova-Light", sans-serif;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+@media (max-width: 992px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 413px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+b {
+  font-weight: bold;
 }
 
 
@@ -101,14 +172,3 @@ body button {
 }
 
 /*============================*/
-
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: black;
-}
- .navbar-inverse .navbar-toggle:hover {
-  background-color: black;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar:hover{
-  background-color: white;
-}

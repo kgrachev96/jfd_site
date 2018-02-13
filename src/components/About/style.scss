@@ -1,0 +1,45 @@
+#about_me {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 2em 0;
+}
+
+#about_content {
+    display: grid;
+    display: -ms-grid;
+    grid-auto-flow: column;
+    grid-gap: 3em;
+    grid-auto-columns: 1fr;
+
+    .about_text {
+
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 5em 1fr;
+        }
+
+        .about_contacts {
+            padding: 1em 0;
+            display: grid;
+            grid-gap: .5em;
+        }
+    }
+
+    img {
+        align-self: center;
+    }
+
+    .btn {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        margin-right: 2em;
+    }
+}

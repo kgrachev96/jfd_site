@@ -17,16 +17,48 @@
         flex-direction: column;
         justify-content: space-between;
 
-        span {
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-columns: 5em 1fr;
-        }
-
         .about_contacts {
             padding: 1em 0;
             display: grid;
             grid-gap: .5em;
+
+            div {
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: 5em 1fr;
+                align-items: center;
+
+                .contact {
+                    font-weight: bold;
+                }
+
+                .about_metro {
+                    text-decoration: none;
+                    color: purple;
+                    font-weight: bold;
+                }
+
+                .contact_icons {
+                    display: flex;
+
+                    a {
+                        display: flex;
+                    }
+
+                    img:not(:first-child) {
+                        padding: 0 .5em;
+                        cursor: pointer;
+                    }
+
+                    img:nth-child(1) {
+                        padding: 0 .5em 0 0;
+                        cursor: pointer;
+                    }
+                    
+                }
+
+            }
+            
         }
     }
 

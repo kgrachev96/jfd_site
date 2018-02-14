@@ -2,6 +2,11 @@ import axios from "axios";
 import * as React from "react";
 import { Button, Image } from "react-bootstrap";
 import * as ReactDOM from "react-dom";
+import * as facebook from "../../images/icons/facebook.svg";
+import * as github from "../../images/icons/github.svg";
+import * as instagram from "../../images/icons/instagram.svg";
+import * as telegram from "../../images/icons/telegram.svg";
+import * as twitter from "../../images/icons/twitter.svg";
 import * as photo from "../../images/photo@2x.jpg";
 
 import "./style.scss";
@@ -42,13 +47,25 @@ export default class About extends React.Component<any, any> {
                             <h1>Привет, меня зовут Грачёв Кирилл.</h1>
                             <p>В настоящее время я работаю на позиции <b>Junior Front-end Developer</b> и занимаюсь разработкой рекламных кампаний для крупных интернет-магазинов, таких как: <b>Re-store, Samsung, Quelle, Lego, Кораблик, Nespresso, Hoff и другие</b>. Я очень ответственно отношусь к выполнению своей работы, люблю изучать новые технологии и стараться применять их в личных или рабочих проектах.  </p>
                             <div className="about_contacts">
-                                <span><p>Телефон:</p><p>89258499071</p></span>
-                                <span><p>Email:</p><p>kgrachev96@gmail.com</p></span>
-                                <span><p>Адрес:</p><p>Мос. обл., г. Лыткарино (ближ. ст. метро - Котельники)</p></span>
-                                <span><p>Медиа:</p><p></p></span>
+                                <div><p className="contact">Телефон:</p><p>8-(925)-849-90-71</p></div>
+                                <div><p className="contact">Email:</p><p>kgrachev96@gmail.com</p></div>
+                                <div><p className="contact">Адрес:</p><p>Мос. обл., г. Лыткарино (ближ. ст. метро - <a className="about_metro">Котельники</a>)</p></div>
+                                <div><p className="contact">Медиа:</p>
+                                    <p className="contact_icons">
+                                        <a href="https://t.me/kgrachev" target="_blank"><Image src={telegram} /></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100015611386835" target="_blank"><Image src={facebook} /></a>
+                                        <a href="https://twitter.com/kgra4ev" target="_blank"><Image src={twitter} /></a>
+                                        <a href="https://github.com/kgrachev96" target="_blank"><Image src={github} /></a>
+                                        <a href="https://www.instagram.com/k_gra4ev/" target="_blank"><Image src={instagram} /></a>
+                                    </p>
+                                </div>
                             </div>
                             <div>
-                                <Button bsStyle="primary">Обратная связь</Button>
+                                <Button 
+                                    bsStyle="primary"
+                                >
+                                    Обратная связь
+                                </Button>
                                 <Button
                                     bsStyle="info"
                                     disabled={isLoading}

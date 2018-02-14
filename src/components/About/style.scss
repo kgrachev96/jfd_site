@@ -75,3 +75,9 @@
         margin-right: 2em;
     }
 }
+
+@media screen and (max-width: 921px) {
+    #about_content {
+        grid-auto-flow: row;
+    }
+}

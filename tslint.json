@@ -11,6 +11,7 @@
         "member-ordering": false,
         "object-literal-sort-keys": false,
         "max-line-length": false,
-        "jsx-boolean-value": false
+        "jsx-boolean-value": false,
+        "no-submodule-imports": false
     }
 }

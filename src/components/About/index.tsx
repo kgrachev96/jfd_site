@@ -1,6 +1,6 @@
-import axios from "axios";
+// import axios from "axios";
 import * as React from "react";
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import * as ReactDOM from "react-dom";
 import * as facebook from "../../images/icons/facebook.svg";
 import * as github from "../../images/icons/github.svg";
@@ -8,6 +8,9 @@ import * as instagram from "../../images/icons/instagram.svg";
 import * as telegram from "../../images/icons/telegram.svg";
 import * as twitter from "../../images/icons/twitter.svg";
 import * as photo from "../../images/photo@2x.jpg";
+
+import Button from "../Button";
+import FormDialog from "../FormDialog";
 
 import "./style.scss";
 
@@ -19,7 +22,10 @@ export default class About extends React.Component<any, any> {
 
         this.state = {
             isLoading: false,
+            showForm: false,
         };
+        this.handleClose = this.handleClose.bind(this);
+        this.handleShow = this.handleShow.bind(this);
     }
 
     public handleClick() {
@@ -35,6 +41,14 @@ export default class About extends React.Component<any, any> {
             // Completed of async action, set loading state back
             this.setState({ isLoading: false });
         }, 2000);
+    }
+
+    public handleClose() {
+        this.setState({ showForm: false });
+    }
+
+    public handleShow() {
+        this.setState({ showForm: true });
     }
 
     public render() {
@@ -61,13 +75,15 @@ export default class About extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div>
-                                <Button 
-                                    bsStyle="primary"
+                                <Button
+                                    className="btn primary"
+                                    onClick={this.handleShow}
                                 >
                                     Обратная связь
                                 </Button>
+                                <FormDialog show={this.state.showForm} hide={this.handleClose} />
                                 <Button
-                                    bsStyle="info"
+                                    className="btn info"
                                     disabled={isLoading}
                                     onClick={!isLoading ? this.handleClick : null}
                                 >

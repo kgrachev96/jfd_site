@@ -26,6 +26,10 @@
 }
 
 @font-face {
+  @include Font("SnellRoundhand", "SnellRoundhand", false);
+}
+
+@font-face {
   @include Font("ProximaNova-Light", "ProximaNova-Light", true);
 }
 
@@ -35,10 +39,6 @@
 
 @font-face {
   @include Font("ProximaNova-Regular", "ProximaNova-Regular", true);
-}
-
-@font-face {
-  @include Font("SnellRoundhand", "SnellRoundhand", false);
 }
 
 html,
@@ -76,6 +76,7 @@ h1 {
   font-family: "ProximaNova-Medium", sans-serif;
   font-weight: 500;
   line-height: 1.1;
+  padding-bottom: 0.5em;
 }
 h2 {
   font-size: 1.5em;
@@ -89,22 +90,17 @@ h2 {
   }
   h2 {
     font-size: 1.5em;
+    line-height: 1.3;
   }
 }
 @media (max-width: 767px) {
   h1 {
     font-size: 1.5em;
   }
-  h2{
-    font-size: 1em;
-  }
 }
 @media (max-width: 413px) {
   h1 {
-    font-size: 1em;
-  }
-  h2 {
-    font-size: .5em;
+    font-size: 1.4em;
   }
 }
 

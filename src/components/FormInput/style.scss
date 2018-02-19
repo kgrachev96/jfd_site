@@ -1,8 +1,10 @@
 #contact-form {
     display: grid;
 
-    .contact-inputs {
-        display: flex;
-        justify-content: space-between;
+    @media(min-width: 768px) {
+        .contact-inputs {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

@@ -28,6 +28,10 @@
                 grid-template-columns: 5em 1fr;
                 align-items: center;
 
+                @media(max-width: 991px) {
+                    grid-template-columns: 6em 1fr;
+                }
+
                 .contact {
                     font-weight: bold;
                 }
@@ -43,16 +47,26 @@
 
                     a {
                         display: flex;
+                        transition: all 0.5s ease 0s;
                     }
 
-                    img:not(:first-child) {
+                    a:not(:first-child) {
                         padding: 0 .5em;
-                        cursor: pointer;
                     }
 
-                    img:nth-child(1) {
+
+                    a:nth-child(1) {
                         padding: 0 .5em 0 0;
-                        cursor: pointer;
+                    }
+
+                    svg {
+                        transform: scale(1, 1);
+                        transition: all 0.5s ease 0s;
+                    }
+
+                    svg:hover {
+                        transform: scale(1.2, 1.2);
+                        transition: all 0.5s ease 0s;
                     }
                     
                 }
@@ -69,6 +83,11 @@
     .btn {
         padding: 15px 25px;
         font-size: 16px;
+
+        @media(max-width: 413px) {
+            padding: 15px 15px;
+            font-size: 14px;
+        }
     }
 
     .btn-primary {
@@ -76,7 +95,7 @@
     }
 }
 
-@media screen and (max-width: 921px) {
+@media screen and (max-width: 991px) {
     #about_content {
         grid-auto-flow: row;
     }

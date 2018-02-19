@@ -1,7 +1,10 @@
 import * as React from "react";
-import { Image, MenuItem, Nav, Navbar, NavItem } from "react-bootstrap";
+import { Image, Navbar } from "react-bootstrap";
 import * as ReactDOM from "react-dom";
-import * as logo from "../../images/logo_desk.svg";
+import * as mobile_logo from "../../images/logo.svg";
+import * as desktop_logo from "../../images/logo_desk.svg";
+
+import NavItems from "../NavItems";
 
 import "./style.scss";
 
@@ -11,33 +14,15 @@ export default class Menu extends React.Component<any, any> {
             <div id="menu_bar">
                 <Navbar staticTop={true} inverse collapseOnSelect>
                     <Navbar.Header>
+
                         <Navbar.Brand>
-                            <Image href="/" src={logo} responsive />
+                            <a href="#brand">Kirill</a>
                         </Navbar.Brand>
+
                         <Navbar.Toggle />
                     </Navbar.Header>
                     <Navbar.Collapse>
-                        <Nav pullRight>
-                            <NavItem eventKey={1} href="#">
-                                Обо мне
-                        </NavItem>
-                            <NavItem eventKey={2} href="#">
-                                Навыки
-                        </NavItem>
-                            <NavItem eventKey={3} href="#">
-                                Образование
-                        </NavItem>
-                            <NavItem eventKey={4} href="#">
-                                Опыт
-                        </NavItem>
-                            <NavItem eventKey={5} href="#">
-                                Портфолио
-                        </NavItem>
-                            <NavItem eventKey={5} href="#">
-                                Обратная связь
-                        </NavItem>
-
-                        </Nav>
+                        <NavItems />
                     </Navbar.Collapse>
                 </Navbar>
             </div >

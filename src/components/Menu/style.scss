@@ -2,12 +2,12 @@
     border-bottom: 1px solid #e3e3e3;
     padding: 1em 0;
 
-    .navbar {
-        margin: 0;
+    @media(max-width: 767px) {
+        padding: 0;
     }
 
-    .navbar-brand {
-        padding: 0 15px;
+    .navbar {
+        margin: 0;
     }
 
     .navbar-inverse {
@@ -15,12 +15,11 @@
         border-color: white;
     }
 
-    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    .navbar-brand {
+        font-family: "SnellRoundhand", sans-serif;
+        font-weight: lighter;
+        font-size: 2em;
+        letter-spacing: 5px;
         color: black;
     }
-
-    .navbar-inverse .navbar-brand:hover {
-        color: black;
-    }
- 
 }

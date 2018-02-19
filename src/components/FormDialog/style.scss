@@ -9,3 +9,14 @@
 .modal-footer {
     border-top: none;
 }
+
+#contact-form {
+    display: grid;
+
+    @media(min-width: 768px) {
+        .contact-inputs {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

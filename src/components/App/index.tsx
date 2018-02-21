@@ -4,6 +4,7 @@ import * as ReactDOM from "react-dom";
 
 import About from "../About";
 import Menu from "../Menu";
+import Skills from "../Skills";
 
 import "./main.scss";
 
@@ -13,6 +14,7 @@ export default class App extends React.Component<any, any> {
             <main>
                 <Menu />
                 <About />
+                <Skills />
             </main>
         );
     }

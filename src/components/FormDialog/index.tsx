@@ -32,7 +32,8 @@ export default class FormDialog extends React.Component<any, any> {
 
     public handleSubmit(event: any) {
         event.preventDefault();
-        const name = this.props.name;
+        const email = this.state.email;
+        (email === "") ? alert(true) : alert(false);
     }
 
     public nameChange(event: any) {
@@ -51,9 +52,9 @@ export default class FormDialog extends React.Component<any, any> {
 
     public render() {
         let emailErrorField = "";
-        const { email, valid } = this.state;
+        const { name, email, valid } = this.state;
 
-        (!valid) ? emailErrorField += "Введите корректный e-mail" : (email === "" ? emailErrorField = "" : "");
+        (!valid) ? emailErrorField += "Введите корректный e-mail" : "";
 
         return (
             <Modal
@@ -64,7 +65,7 @@ export default class FormDialog extends React.Component<any, any> {
                     <Modal.Title>Форма обратной связи</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <h2>Моё портфолио Вас заинтересовало? Напишите мне. Я буду очень рад Вашему письму!</h2>
+                    <h2>Если Вам понравилась моя кандидатура, я буду очень рад с Вами пообщаться и рассмотреть все Ваши предложения. Спасибо за уделенное мне внимание. Для того, чтобы связаться со мной Вы можете написать мне письмо, в самое ближайшее время я Вам обязательно отвечу!</h2>
                     <div>
                         <MuiThemeProvider>
                             <div id="contact-form">
@@ -99,7 +100,7 @@ export default class FormDialog extends React.Component<any, any> {
 
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button className="btn btn-modal success" onClick={this.props.send} type="submit">Отправить письмо</Button>
+                    <Button className="btn btn-modal success" onClick={this.handleSubmit} type="submit">Отправить письмо</Button>
                     <Button className="btn btn-modal exit" onClick={this.props.hide}>Закрыть</Button>
                 </Modal.Footer>
             </Modal >

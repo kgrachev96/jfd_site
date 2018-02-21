@@ -1,0 +1,26 @@
+#my_skills {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 2em 0;
+
+    #skills_content {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        grid-gap: 3em;
+
+        .skills_blocks {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 3em;
+
+            div {
+                display: grid;
+                grid-gap: 1em;
+                padding: 1em;
+                border-bottom: 1px solid #e3e3e3;            
+            }
+        }
+    }
+}

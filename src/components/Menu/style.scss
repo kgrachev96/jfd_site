@@ -1,25 +1,10 @@
 #menu_bar {
-    border-bottom: 1px solid #e3e3e3;
     padding: 1em 0;
 
-    @media(max-width: 767px) {
-        padding: 0;
-    }
-
-    .navbar {
-        margin: 0;
-    }
-
-    .navbar-inverse {
-        background-color: white;
-        border-color: white;
-    }
-
     .navbar-brand {
-        font-family: "SnellRoundhand", sans-serif;
-        font-weight: lighter;
+        font-family: "ProximaNova-Medium", sans-serif;
+        font-weight: 500;
         font-size: 2em;
-        letter-spacing: 5px;
-        color: black;
+        color: white;
     }
 }

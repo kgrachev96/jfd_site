@@ -3,23 +3,70 @@
     padding: 2em 0;
 
     #skills_content {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-        grid-gap: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .skills_text {
+            h1, p {
+                text-align: center;
+                white-space: pre-line;
+            }
+        }
 
         .skills_blocks {
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 3em;
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
 
             div {
-                display: grid;
-                grid-gap: 1em;
                 padding: 1em;
-                border-bottom: 1px solid #e3e3e3;            
+                width: 100%; 
+                display: flex;
+                flex-direction: column;
+
+                .image_block {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-basis: 10em;
+                    align-items: center;
+                }
+
+                .text_block {
+
+                    h2 {
+                        padding: .5em 0;
+                    }
+                }
+            }
+        }
+
+        .skills_icons {
+            margin-top: 2em;
+
+            h2 {
+                text-align: center;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 3em 0;
+
+                span {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-around;
+                    height: 8em;
+                    align-items: center;
+
+                    img {
+                        height: 5em;
+                    }
+                }
             }
         }
     }

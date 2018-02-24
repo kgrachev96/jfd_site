@@ -1,6 +1,6 @@
 #about_me {
     border-bottom: 1px solid #e3e3e3;
-    padding: 2em 0;
+    padding: 3em 0;
 }
 
 #about_content {
@@ -16,15 +16,6 @@
         display: -webkit-flex;
         flex-direction: column;
         justify-content: space-between;
-
-        p:nth-child(2) {
-            margin-bottom: .5em;
-        }
-
-        h1 {
-            font-size: 1.8em;
-            margin-bottom: .5em;
-        }
 
         .about_contacts {
             padding: 1em 0;

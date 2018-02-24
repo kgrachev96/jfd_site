@@ -11,11 +11,16 @@ import "./main.scss";
 export default class App extends React.Component<any, any> {
     public render() {
         return (
-            <main>
-                <Menu />
-                <About />
-                <Skills />
-            </main>
+            <section>
+                <main>
+                    <Menu />
+                    <About />
+                    <Skills />
+                </main>
+                <footer>
+                    <p>Copyright 2018 Кирилл.</p>
+                </footer>
+            </section>
         );
     }
 }

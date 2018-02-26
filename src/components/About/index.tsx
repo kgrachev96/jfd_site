@@ -7,7 +7,7 @@ import * as github from "../../images/icons/github.svg";
 import * as instagram from "../../images/icons/instagram.svg";
 import * as telegram from "../../images/icons/telegram.svg";
 import * as twitter from "../../images/icons/twitter.svg";
-import * as photo from "../../images/photo@2x.jpg";
+import * as photo from "../../images/photo.jpg";
 
 import Button from "../Button";
 import FormDialog from "../FormDialog";
@@ -59,14 +59,15 @@ export default class About extends React.Component<any, any> {
                     <div id="about_content">
                         <div className="about_text">
                             <h1>Здравствуйте, меня зовут Грачёв Кирилл.</h1>
-                            <p>В настоящее время я работаю на позиции Junior Front-end Developer и занимаюсь разработкой рекламных кампаний для крупных интернет-магазинов, таких как: Re-store, Samsung, Quelle, Lego, Кораблик, Nespresso, Hoff и другие. Я очень ответственно отношусь к выполнению своей работы. Для меня важен сам процесс, продумывание деталей и корректировка сделанной работы, которую я люблю доводить до идеала. Результат так же имеет для меня не малое значение, однако я считаю, что работа должна быть выполнена не в количественном объёме, а в качественном совершенстве.</p>
+                            <p>В настоящее время я работаю на позиции <b>Junior Front-end Developer</b> и занимаюсь разработкой рекламных кампаний для крупных интернет-магазинов, таких как: <b>Re-store, Samsung, Quelle, Lego, Кораблик, Nespresso, Hoff и другие</b>. Я очень ответственно отношусь к выполнению своей работы. Для меня важен сам процесс, продумывание деталей и корректировка сделанной работы, которую я люблю доводить до идеала. Результат так же имеет для меня не малое значение, однако я считаю, что работа должна быть выполнена не в количественном объёме, а в качественном совершенстве.</p>
                             <p>Я люблю изучать новые технологии и стараюсь их применять как в личных, так и в рабочих проектах. Это помогает мне оттачивать свое мастерство и добиваться хороших успехов в моём деле. Я ставлю себе цель - стать востребованным специалистом, поэтому считаю что моя кандидатура может Вас заинтересовать.</p>
                             <div className="about_contacts">
-                                <div><span className="contact">Телефон:</span><p>8-(925)-849-90-71</p></div>
-                                <div><span className="contact">Email:</span><p>kgrachev96@gmail.com</p></div>
-                                <div><span className="contact">Адрес:</span><p>Мос. обл., г. Лыткарино (ближ. ст. метро - <a className="about_metro">Котельники</a>)</p></div>
-                                <div><span className="contact">Медиа:</span>
+                                <div><p><b>Телефон:</b>8-(925)-849-90-71</p></div>
+                                <div><p><b>Email:</b>kgrachev96@gmail.com</p></div>
+                                <div><p><b>Адрес:</b>Мос. обл., г. Лыткарино (ближ. ст. метро - <a className="about_metro">Котельники</a>)</p></div>
+                                <div>
                                     <p className="contact_icons">
+                                        <b>Медиа:</b>
                                         <a className="telegram" href="https://t.me/kgrachev" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path className="fill_tel" fill="#000000" d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z" /></svg> </a>
                                         <a href="https://www.facebook.com/profile.php?id=100015611386835" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path className="fill_fb" fill="#000000" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" /></svg> </a>
                                         <a href="https://twitter.com/kgra4ev" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path className="fill_twitt" fill="#000000" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M17.71,9.33C18.19,8.93 18.75,8.45 19,7.92C18.59,8.13 18.1,8.26 17.56,8.33C18.06,7.97 18.47,7.5 18.68,6.86C18.16,7.14 17.63,7.38 16.97,7.5C15.42,5.63 11.71,7.15 12.37,9.95C9.76,9.79 8.17,8.61 6.85,7.16C6.1,8.38 6.75,10.23 7.64,10.74C7.18,10.71 6.83,10.57 6.5,10.41C6.54,11.95 7.39,12.69 8.58,13.09C8.22,13.16 7.82,13.18 7.44,13.12C7.81,14.19 8.58,14.86 9.9,15C9,15.76 7.34,16.29 6,16.08C7.15,16.81 8.46,17.39 10.28,17.31C14.69,17.11 17.64,13.95 17.71,9.33Z" /></svg> </a>
@@ -92,7 +93,9 @@ export default class About extends React.Component<any, any> {
                                 </Button>
                             </div>
                         </div>
-                        <Image src={photo} responsive />
+                        <div className="about_image">
+                            <Image src={photo} responsive />
+                        </div>
                     </div>
                 </div>
             </div >

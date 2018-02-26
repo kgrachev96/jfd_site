@@ -13,17 +13,19 @@ export default class Menu extends React.Component<any, any> {
         return (
             <div id="menu_bar">
                 <Navbar fixedTop={true} inverse collapseOnSelect>
-                    <Navbar.Header>
+                    <div className="navbar_blocks">
+                        <Navbar.Header>
 
-                        <Navbar.Brand>
-                            <a href="#brand">Кирилл.</a>
-                        </Navbar.Brand>
+                            <Navbar.Brand>
+                                <a href="#brand">k.grachev</a>
+                            </Navbar.Brand>
 
-                        <Navbar.Toggle />
-                    </Navbar.Header>
-                    <Navbar.Collapse>
-                        <NavItems />
-                    </Navbar.Collapse>
+                            <Navbar.Toggle />
+                        </Navbar.Header>
+                        <Navbar.Collapse>
+                            <NavItems />
+                        </Navbar.Collapse>
+                    </div>
                 </Navbar>
             </div >
         );

@@ -11,7 +11,6 @@
         .skills_text {
             h1, p {
                 text-align: center;
-                white-space: pre-line;
             }
         }
 
@@ -20,7 +19,7 @@
             justify-content: center;
             margin-top: 2em;
 
-            div {
+            .skill_block {
                 padding: 1em;
                 width: 100%; 
                 display: flex;
@@ -29,7 +28,6 @@
                 .image_block {
                     display: flex;
                     justify-content: space-around;
-                    flex-basis: 10em;
                     align-items: center;
                 }
 
@@ -37,6 +35,10 @@
 
                     h2 {
                         padding: .5em 0;
+                    }
+
+                    h2, p {
+                        text-align: center;
                     }
                 }
             }

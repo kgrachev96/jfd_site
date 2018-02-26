@@ -1,10 +1,35 @@
 #menu_bar {
     padding: 1em 0;
 
+    .navbar-inverse {
+        background-color: #9f9f9f;
+        border-color: #9f9f9f;
+    }
+
     .navbar-brand {
-        font-family: "ProximaNova-Medium", sans-serif;
+        font-family: SignPainter, sans-serif;
         font-weight: 500;
         font-size: 2em;
         color: white;
+    }
+
+    @media(min-width: 768px) {
+
+        .navbar-collapse {
+            display: flex!important;
+            justify-content: flex-end;
+        }
+
+        .navbar-header {
+            float: none;
+        }
+    
+        .navbar {
+            .navbar_blocks {
+                display: flex;
+                display: -webkit-flex;
+                justify-content: space-between;
+            }
+        }
     }
 }

@@ -3,14 +3,8 @@ import { Image, MenuItem, Nav, Navbar, NavItem } from "react-bootstrap";
 import * as ReactDOM from "react-dom";
 
 import * as back from "../../images/backend.png";
+import * as browsers from "../../images/brows.png";
 import * as apple from "../../images/responsive.svg";
-
-/* Иконки для skills_blocks */
-import * as chrome from "../../images/browsers/chrome.svg";
-import * as firefox from "../../images/browsers/firefox.svg";
-import * as ie from "../../images/browsers/ie.svg";
-import * as opera from "../../images/browsers/opera.svg";
-import * as safari from "../../images/browsers/safari.svg";
 
 /* Иконки для блока skill_icons */
 import * as css3 from "../../images/technology/css.svg";
@@ -40,40 +34,36 @@ export default class Skills extends React.Component<any, any> {
                 <div className="container">
                     <div id="skills_content">
                         <div className="skills_text">
-                            <h1>Навыки.</h1>
-                            <p>Я не хочу ограничивать себя тем, что уже знаю, поэтому в свободное время я совершенствую свои навыки и умения,{"\n"}чтобы стать ещё более компетентным в выбранной сфере деятельности.</p>
+                            <h1>Навыки</h1>
+                            <p>Я не хочу ограничивать себя тем, что уже знаю, поэтому в свободное время я совершенствую свои навыки и умения, <br />чтобы стать ещё более компетентным в выбранной сфере деятельности.</p>
                         </div>
                         <div className="skills_blocks">
-                            <div>
-                                <span className="image_block">
+                            <div className="skill_block">
+                                <div className="image_block">
                                     <Image src={apple} responsive />
-                                </span>
-                                <span className="text_block">
+                                </div>
+                                <div className="text_block">
                                     <h2>Вёрстка</h2>
                                     <p>Адаптивная вёрстка, div-вёрстка, резиновая вёрстка, фиксированная вёрстка, flex-вёрстка, семантическая вёрстка.</p>
-                                </span>
+                                </div>
                             </div>
-                            <div>
-                                <span className="image_block">
-                                    <Image src={chrome} responsive />
-                                    <Image src={firefox} responsive />
-                                    <Image src={safari} responsive />
-                                    <Image src={opera} responsive />
-                                    <Image src={ie} responsive />
-                                </span>
-                                <span className="text_block">
+                            <div className="skill_block">
+                                <div className="image_block">
+                                    <Image src={browsers} responsive />
+                                </div>
+                                <div className="text_block">
                                     <h2>Кроссбраузерность</h2>
                                     <p>Поддержка IE10+, Edge, а так же современных версий Chrome, Mozilla FireFox, Opera, Safari.</p>
-                                </span>
+                                </div>
                             </div>
-                            <div>
-                                <span className="image_block">
+                            <div className="skill_block">
+                                <div className="image_block">
                                     <Image src={back} responsive />
-                                </span>
-                                <span className="text_block">
+                                </div>
+                                <div className="text_block">
                                     <h2>Backend</h2>
-                                    <p>У меня есть опыт написания backend. Для реализации проектов я работаю с такими техонологиями, как: библиотека Express, TypeORM, MongoDB, PHP.</p>
-                                </span>
+                                    <p>У меня есть опыт написания серверной части веб-приложений с использованием REST API и MongoDB. </p>
+                                </div>
                             </div>
                         </div>
                         <div className="skills_icons">

@@ -63,6 +63,7 @@ footer {
 
   p {
       color: white;
+      text-align: center;
   }
 }
 @media (max-width: 992px) {
@@ -133,16 +134,24 @@ p {
 @media (max-width: 767px) {
   p {
     font-size: 1.1em;
+    width: 380px;
   }
 }
 @media (max-width: 413px) {
   p {
     font-size: 1.1em;
+    width: 280px;
   }
 }
 
 b {
   font-weight: bold;
+}
+
+@media(max-width: 1199px) {
+  br {
+    display: none;
+  }
 }
 
 

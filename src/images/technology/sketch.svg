@@ -1,1 +1,70 @@
-<?xml version="1.0" ?><svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs><polygon id="path-1" points="7.84866785 1.07177992 17.9865332 0 28.1243985 1.07177992 35.9730709 11.6079278 17.9865332 32.5530572 0 11.6079278"/><polygon id="path-3" points="7.28545311 0.0348655654 17.9865332 20.9799949 0 0.0348655654"/><polygon id="path-5" points="10.7104849 0.0348655654 0.00940482846 20.9799949 17.9959426 0.0348655654"/><polygon id="path-7" points="0.0122637865 0.0348655654 21.4144239 0.0348655654 10.7133438 20.9799949"/><polygon id="path-9" points="10.7133438 0 0.575478526 1.07177992 0.0122637865 11.6079278"/><polygon id="path-11" points="0.00940482846 0 10.1472701 1.07177992 10.7104849 11.6079278"/><polygon id="path-13" points="7.88666684 10.5558313 0.0379944091 0.0196833545 0.601209149 10.5558313"/><polygon id="path-15" points="0 10.5558313 7.84866785 0.0196833545 7.28545311 10.5558313"/><polygon id="path-17" points="10.7133438 0 0.0122637865 11.6079278 21.4144239 11.6079278"/></defs><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g id="Social_icons" transform="translate(-322.000000, -654.000000)"><g id="Sketch" transform="translate(322.000000, 654.000000)"><circle cx="30" cy="30" fill="#FFFFFF" id="Oval" r="30"/><g id="sketch-symbol" transform="translate(12.000000, 16.000000)"><g id="Group-6"><mask fill="white" id="mask-2"><use xlink:href="#path-1"/></mask><g id="Clip-5"/><polygon fill="#FDB300" id="Fill-4" mask="url(#mask-2)" points="-0.457433291 33.0104905 36.4305042 33.0104905 36.4305042 -0.457433291 -0.457433291 -0.457433291"/></g><g id="Group-9" transform="translate(0.000000, 11.573062)"><mask fill="white" id="mask-4"><use xlink:href="#path-3"/></mask><g id="Clip-8"/><polygon fill="#EA6C00" id="Fill-7" mask="url(#mask-4)" points="-0.457433291 21.4374282 18.4439665 21.4374282 18.4439665 -0.422567726 -0.457433291 -0.422567726"/></g><g id="Group-12" transform="translate(17.977128, 11.573062)"><mask fill="white" id="mask-6"><use xlink:href="#path-5"/></mask><g id="Clip-11"/><polygon fill="#EA6C00" id="Fill-10" mask="url(#mask-6)" points="-0.448028463 21.4374282 18.4533713 21.4374282 18.4533713 -0.422567726 -0.448028463 -0.422567726"/></g><g id="Group-15" transform="translate(7.273189, 11.573062)"><mask fill="white" id="mask-8"><use xlink:href="#path-7"/></mask><g id="Clip-14"/><polygon fill="#FDAD00" id="Fill-13" mask="url(#mask-8)" points="-0.445169504 21.4374282 21.8718572 21.4374282 21.8718572 -0.422567726 -0.445169504 -0.422567726"/></g><g id="Group-18" transform="translate(7.273189, 0.000000)"><mask fill="white" id="mask-10"><use xlink:href="#path-9"/></mask><g id="Clip-17"/><polygon fill="#FDD231" id="Fill-16" mask="url(#mask-10)" points="-0.445169504 12.0653611 11.1707771 12.0653611 11.1707771 -0.457433291 -0.445169504 -0.457433291"/></g><g id="Group-21" transform="translate(17.977128, 0.000000)"><mask fill="white" id="mask-12"><use xlink:href="#path-11"/></mask><g id="Clip-20"/><polygon fill="#FDD231" id="Fill-19" mask="url(#mask-12)" points="-0.448028463 12.0653611 11.1679182 12.0653611 11.1679182 -0.457433291 -0.448028463 -0.457433291"/></g><g id="Group-24" transform="translate(28.086404, 1.052097)"><mask fill="white" id="mask-14"><use xlink:href="#path-13"/></mask><g id="Clip-23"/><polygon fill="#FDAD00" id="Fill-22" mask="url(#mask-14)" points="-0.419438882 11.0132645 8.34409555 11.0132645 8.34409555 -0.437749936 -0.419438882 -0.437749936"/></g><g id="Group-27" transform="translate(0.000000, 1.052097)"><mask fill="white" id="mask-16"><use xlink:href="#path-15"/></mask><g id="Clip-26"/><polygon fill="#FDAD00" id="Fill-25" mask="url(#mask-16)" points="-0.457433291 11.0132645 8.30610114 11.0132645 8.30610114 -0.437749936 -0.457433291 -0.437749936"/></g><g id="Group-30" transform="translate(7.273189, 0.000000)"><mask fill="white" id="mask-18"><use xlink:href="#path-17"/></mask><g id="Clip-29"/><polygon fill="#FEEEB7" id="Fill-28" mask="url(#mask-18)" points="-0.445169504 12.0653611 21.8718572 12.0653611 21.8718572 -0.457433291 -0.445169504 -0.457433291"/></g></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" x="0px" y="0px" viewBox="0 0 128 128">
+  <defs>
+    <polygon id="sketch-a" points="14.389 2.014 32.975 0 51.561 2.014 65.951 21.809 32.975 61.16 0 21.809"/>
+    <polygon id="sketch-c" points="13.761 .065 33.975 38.963 0 .065"/>
+    <polygon id="sketch-e" points="20.231 .065 .018 38.963 33.992 .065"/>
+    <polygon id="sketch-g" points=".022 .065 38.935 .065 19.479 38.963"/>
+    <polygon id="sketch-i" points="20.453 0 1.099 2.054 .023 22.249"/>
+    <polygon id="sketch-k" points=".016 0 17.527 2.054 18.5 22.249"/>
+    <polygon id="sketch-m" points="14.788 20.152 .071 .038 1.127 20.152"/>
+    <polygon id="sketch-o" points="0 20.152 14.716 .038 13.66 20.152"/>
+    <polygon id="sketch-q" points="19.479 0 .022 22.249 38.935 22.249"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="128" height="128" fill="#130C33"/>
+    <g transform="translate(30 33)">
+      <mask id="sketch-b" fill="#fff">
+        <use xlink:href="#sketch-a"/>
+      </mask>
+      <polygon fill="#FDB300" fill-rule="nonzero" points="-.839 62.02 66.789 62.02 66.789 -.859 -.839 -.859" mask="url(#sketch-b)"/>
+      <g transform="translate(0 22)">
+        <mask id="sketch-d" fill="#fff">
+          <use xlink:href="#sketch-c"/>
+        </mask>
+        <polygon fill="#EA6C00" fill-rule="nonzero" points="-.864 39.812 34.839 39.812 34.839 -.785 -.864 -.785" mask="url(#sketch-d)"/>
+      </g>
+      <g transform="translate(34 22)">
+        <mask id="sketch-f" fill="#fff">
+          <use xlink:href="#sketch-e"/>
+        </mask>
+        <polygon fill="#EA6C00" fill-rule="nonzero" points="-.846 39.812 34.856 39.812 34.856 -.785 -.846 -.785" mask="url(#sketch-f)"/>
+      </g>
+      <g transform="translate(13 22)">
+        <mask id="sketch-h" fill="#fff">
+          <use xlink:href="#sketch-g"/>
+        </mask>
+        <polygon fill="#FDAD00" fill-rule="nonzero" points="-.809 39.812 39.767 39.812 39.767 -.785 -.809 -.785" mask="url(#sketch-h)"/>
+      </g>
+      <g transform="translate(13)">
+        <mask id="sketch-j" fill="#fff">
+          <use xlink:href="#sketch-i"/>
+        </mask>
+        <polygon fill="#FDD231" fill-rule="nonzero" points="-.85 23.125 21.326 23.125 21.326 -.877 -.85 -.877" mask="url(#sketch-j)"/>
+      </g>
+      <g transform="translate(34)">
+        <mask id="sketch-l" fill="#fff">
+          <use xlink:href="#sketch-k"/>
+        </mask>
+        <polygon fill="#FDD231" fill-rule="nonzero" points="-.774 23.125 19.29 23.125 19.29 -.877 -.774 -.877" mask="url(#sketch-l)"/>
+      </g>
+      <g transform="translate(52 2)">
+        <mask id="sketch-n" fill="#fff">
+          <use xlink:href="#sketch-m"/>
+        </mask>
+        <polygon fill="#FDAD00" fill-rule="nonzero" points="-.786 21.025 15.645 21.025 15.645 -.836 -.786 -.836" mask="url(#sketch-n)"/>
+      </g>
+      <g transform="translate(0 2)">
+        <mask id="sketch-p" fill="#fff">
+          <use xlink:href="#sketch-o"/>
+        </mask>
+        <polygon fill="#FDAD00" fill-rule="nonzero" points="-.858 21.025 15.574 21.025 15.574 -.836 -.858 -.836" mask="url(#sketch-p)"/>
+      </g>
+      <g transform="translate(13)">
+        <mask id="sketch-r" fill="#fff">
+          <use xlink:href="#sketch-q"/>
+        </mask>
+        <polygon fill="#FEEEB7" fill-rule="nonzero" points="-.809 23.125 39.767 23.125 39.767 -.877 -.809 -.877" mask="url(#sketch-r)"/>
+      </g>
+    </g>
+  </g>
+</svg>

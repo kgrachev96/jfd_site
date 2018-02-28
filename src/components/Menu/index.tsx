@@ -17,7 +17,7 @@ export default class Menu extends React.Component<any, any> {
                         <Navbar.Header>
 
                             <Navbar.Brand>
-                                <a href="#brand">k.grachev</a>
+                                <a href="/">k.grachev</a>
                             </Navbar.Brand>
 
                             <Navbar.Toggle />

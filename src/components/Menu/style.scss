@@ -4,6 +4,19 @@
     .navbar-inverse {
         background-color: #9f9f9f;
         border-color: #9f9f9f;
+        box-shadow: 0 6px 1em -4px grey;
+
+        .navbar-collapse {
+            border-color: #fff;
+        }
+
+        .navbar-toggle {
+            border-color: #fff;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
     }
 
     .navbar-brand {

@@ -1,0 +1,22 @@
+#my_portfolio {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 2em 0;
+
+    #portfolio_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media(min-width: 992px) {
+            & {
+                align-items: center;
+            }
+        }
+
+        .portfolio_text {
+            h1, p {
+                text-align: center;
+            }
+        }
+    }
+}

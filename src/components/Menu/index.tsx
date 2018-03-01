@@ -11,13 +11,13 @@ import "./style.scss";
 export default class Menu extends React.Component<any, any> {
     public render() {
         return (
-            <div id="menu_bar">
+            <section id="menu_bar">
                 <Navbar fixedTop={true} inverse collapseOnSelect>
                     <div className="navbar_blocks">
                         <Navbar.Header>
 
                             <Navbar.Brand>
-                                <a href="/">k.grachev</a>
+                                <a href="#">k.grachev</a>
                             </Navbar.Brand>
 
                             <Navbar.Toggle />
@@ -27,7 +27,7 @@ export default class Menu extends React.Component<any, any> {
                         </Navbar.Collapse>
                     </div>
                 </Navbar>
-            </div >
+            </section >
         );
     }
 }

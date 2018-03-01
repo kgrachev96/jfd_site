@@ -1,0 +1,12 @@
+.scrollTop {
+    opacity: 0.3;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }

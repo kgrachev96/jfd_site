@@ -1,0 +1,74 @@
+#my_exp {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 2em 0;
+
+    #exp_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media(min-width: 992px) {
+            & {
+                align-items: center;
+            }
+        }
+
+        .exp_text {
+            h1, p {
+                text-align: center;
+            }
+        }
+
+        .exp_blocks {
+            display: flex;
+
+            @media(max-width: 767px) {
+                & {
+                    flex-direction: column;
+                }
+            }
+
+            .exp_block {
+                // border-radius: 8px;
+                // border: solid 1px #9f9f9f;
+                padding: 1em;
+                margin-top: 2em;
+                
+                .block_image {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 38px;
+                    }
+                }
+
+                .block_content {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2em 1em;
+
+                    .exp_date {
+                        font-style: italic;
+                    }
+
+                    span {
+                        display: flex;
+
+                        @media(max-width: 767px) {
+                            & {
+                                flex-direction: column;
+                            }
+                        }
+
+                        .content_name {
+                            margin-right: 0.5em;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

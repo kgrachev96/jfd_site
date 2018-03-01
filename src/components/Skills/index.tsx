@@ -23,6 +23,7 @@ import * as nginx from "../../images/technology/nginx.svg";
 import * as nodejs from "../../images/technology/nodejs.svg";
 import * as npm from "../../images/technology/npm.svg";
 import * as php from "../../images/technology/php.svg";
+import * as postman from "../../images/technology/postman.svg";
 import * as react from "../../images/technology/react.svg";
 import * as sass from "../../images/technology/sass.svg";
 import * as sketch from "../../images/technology/sketch.svg";
@@ -38,7 +39,7 @@ import "./style.scss";
 export default class Skills extends React.Component<any, any> {
     public render() {
         return (
-            <div id="my_skills">
+            <section id="my_skills">
                 <div className="container">
                     <div id="skills_content">
                         <div className="skills_text">
@@ -75,7 +76,7 @@ export default class Skills extends React.Component<any, any> {
                             </div>
                         </div>
                         <div className="skills_grid">
-                            <h2>В своих работах я пользуюсь следующими инструментами и технологиями:</h2>
+                            <h2>В своих работах я использую следующие инструменты и технологии:</h2>
                             <div className="skills_icons">
                                 <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
                                     <Tab eventKey={1} title="Front-end">
@@ -175,13 +176,17 @@ export default class Skills extends React.Component<any, any> {
                                             <Image src={zeplin} responsive />
                                             <span>Zeplin</span>
                                         </div>
+                                        <div className="skill_tile postman">
+                                            <Image src={postman} responsive />
+                                            <span>Postman</span>
+                                        </div>
                                     </Tab>
                                 </Tabs>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div >
+            </section >
         );
     }
 }

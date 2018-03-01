@@ -1,0 +1,21 @@
+#contact_me {
+    padding: 2em 0;
+
+    #contact_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media(min-width: 992px) {
+            & {
+                align-items: center;
+            }
+        }
+
+        .contact_text {
+            h1, p {
+                text-align: center;
+            }
+        }
+    }
+}

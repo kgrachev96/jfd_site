@@ -73,7 +73,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-                padding: 3em 0;
+                padding-top: 3em;
 
                 #uncontrolled-tab-example {
                     width: 80%;
@@ -92,7 +92,7 @@
                     .tab-content>.active {
                         display: flex;
                         flex-wrap: wrap;
-                        padding: 1em 0;
+                        padding-top: 1em;
                         justify-content: center;
                     }
                 }
@@ -131,6 +131,7 @@
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
+                        border-radius: 1em;
                     }
                 }
             }

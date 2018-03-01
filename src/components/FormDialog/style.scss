@@ -2,6 +2,17 @@
     padding: 15px 15px 0 15px;
 }
 
+.modal {
+    display: flex!important;
+    justify-content: center;
+
+    @media(min-width: 414px) {
+        & {
+            align-items: center;
+        }
+    }
+}
+
 .modal-title {
     font-family: "ProximaNova-Regular", sans-serif;
 }

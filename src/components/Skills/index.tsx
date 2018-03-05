@@ -27,6 +27,7 @@ import * as postman from "../../images/technology/postman.svg";
 import * as react from "../../images/technology/react.svg";
 import * as sass from "../../images/technology/sass.svg";
 import * as sketch from "../../images/technology/sketch.svg";
+import * as studio3T from "../../images/technology/studio3T.svg";
 import * as sublime from "../../images/technology/sublime.svg";
 import * as typeorm from "../../images/technology/typeorm.svg";
 import * as typescript from "../../images/technology/typescript.svg";
@@ -171,6 +172,10 @@ export default class Skills extends React.Component<any, any> {
                                         <div className="skill_tile sketch">
                                             <Image src={sketch} responsive />
                                             <span>Sketch</span>
+                                        </div>
+                                        <div className="skill_tile studio3T">
+                                            <Image src={studio3T} responsive />
+                                            <span>Studio 3T</span>
                                         </div>
                                         <div className="skill_tile zeplin">
                                             <Image src={zeplin} responsive />

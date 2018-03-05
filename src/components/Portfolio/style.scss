@@ -18,5 +18,20 @@
                 text-align: center;
             }
         }
+
+        .portfolio_blocks {
+
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding-top: 1em;
+
+            div {
+
+                img {
+                    height: 17em;
+                }
+            }
+        }
     }
 }

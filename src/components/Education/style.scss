@@ -51,6 +51,11 @@
                 flex-direction: column;
                 padding: 2em 1em;
 
+                @media(max-width: 767px) {
+                    padding: 0;
+                    margin-top: 1em;
+                }
+
                 .edu_date {
                     font-style: italic;
                 }

@@ -4,6 +4,8 @@ import * as ReactDOM from "react-dom";
 import { RaisedButton, TextField } from "material-ui";
 import { MuiThemeProvider } from "material-ui/styles";
 
+import Button from "../Button";
+
 import "./style.scss";
 
 export default class Contact extends React.Component<any, any> {
@@ -12,12 +14,14 @@ export default class Contact extends React.Component<any, any> {
             <div id="contact_me">
                 <div className="container">
                     <div id="contact_content">
-                        <div className="contact_text">
-                            <h1>Обратная связь</h1>
-                        </div>
-                        <div>
+                        <div className="contact_blocks">
+                            <div className="contact_text">
+                                <h1>Напишите мне</h1>
+                                <p>Если Вам понравилась моя кандидатура, я буду очень рад с Вами пообщаться и рассмотреть все Ваши предложения. Спасибо за уделенное мне внимание. Для того, чтобы связаться со мной Вы можете написать мне письмо, в самое ближайшее время я Вам обязательно отвечу!</p>
+                                <Button className="btn btn-modal success" type="submit">Отправить письмо</Button>
+                            </div>
                             <MuiThemeProvider>
-                                <div id="contact-form">
+                                <div className="contact_form">
                                     <div className="contact-inputs">
                                         <TextField
                                             className="firstname"

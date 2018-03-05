@@ -12,9 +12,34 @@
             }
         }
 
-        .contact_text {
-            h1, p {
-                text-align: center;
+        .contact_blocks {
+            display: flex;
+            padding: 2em 0;
+
+            @media(max-width: 991px) {
+                & {
+                    flex-direction: column;
+                }
+            }
+
+            .contact_text {
+                flex: 1 1 60%;
+                padding-right: 1em;
+
+                button{ 
+                    margin-top: 2em;
+                }
+            }
+
+            .contact_form {
+                display: flex;
+                flex: 1 1 100%;
+
+                @media(max-width: 767px) {
+                    & {
+                        flex-direction: column;
+                    }
+                }
             }
         }
     }
